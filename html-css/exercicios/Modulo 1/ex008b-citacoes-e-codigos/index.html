@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="shortcut icon" href="kd_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+        <h2>Código Fonte &lt;code&gt; / Pré Formatação &lt;pre&gt;</h2>
+        <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+        <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+
+        <code> <!-- Ao fazer simplesmente o code ele perde a indentação -->
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR)
+            else
+                print(f'O número {num} é ÍMPAR)
+            print('Fim do programa')
+        </code>
+
+        <pre>
+            <code> <!-- usando assim, ele vai indentar, mas vai colocar o texto com as tabulações e na pagina vai aparecer mais a esquerda -->
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR)
+                else
+                    print(f'O número {num} é ÍMPAR)
+                print('Fim do programa')
+            </code>
+        </pre>
+
+        <!-- para voltar a indentação basta premir Shift + TAB que ele volta os espaçamentos -->
+        <pre> <!-- ao usar o pré ele vai fazer a indentação -->
+            <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR)
+else
+    print(f'O número {num} é ÍMPAR)
+print('Fim do programa')
+            </code>
+        </pre>
+
+        <h2>Citações &lt;q&gt;</h2>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+
+        <h2>Citações Completas &lt;blockquote cite="..."&gt;</h2> <!-- cria sitações em bloco -->
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+        <blockquote cite="https://books.google.co.ao/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+        </blockquote>
+
+        <h2>Abreviações &lt;abbr&gt;</h2>
+        <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+        <h2>Texto Intevertido &lt;bdo&gt;</h2>
+        <p><bdo dir="rtl">estou aprendendo a criar coisas em HTML, e estou adorandA</bdo></p>
+</body>
+</html>

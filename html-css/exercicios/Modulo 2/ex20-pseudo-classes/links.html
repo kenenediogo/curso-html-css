@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Links</title>
+    <link rel="shortcut icon" href="modulo-2.ico" type="image/x-icon">
+
+    <style>
+
+        /* SELECTORES PESONALIZADOS
+
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-elemento
+            >   = children (filho)
+        
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial::before {
+            content: '⇥ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        a.especial::after {
+            content: ' ⇤';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .recomendacao {
+            font-weight: bold;
+            color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links:</h1>
+    <ul>
+        <li><a href="https://github.com/kenenediogo" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://youtube.com/@KeneneDiogoCursos" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+        <li><a href="https://facebook.com/kenenediogo81" target="_blank" class="especial">Página do Facebook</a></li>
+    </ul>
+
+    <h2>Pseudo Classes: ->(:)<- </h2>
+    <p>As pseudo classes são palavras que definem estados de elementos dentro da HTML, e nesta vimos três delas: <strong>visited, hover e active</strong>:</p>
+
+    <ul type="square">
+        <li><strong>a:visited { color: red; }</strong> : faz com que o site visitado tenha a cor que se definiu</li>
+        <li><strong>a:hover { color: black; text-decoration; underline; }</strong> : É para realçar o texto quando passamos o cursor por cima. Basta levar o cursor por cima do texto sem clicar, ele muda com a cor que definimos no CSS</li>
+        <li><strong>a:active { color: yellow; }</strong> : Esta classe usa-se para definir a cor quando vamos clicar no texto antes de largar o click.</li>
+    </ul>
+
+    <p>De recordar que a letra <strong>"a"</strong> que está a frente dos atributos, pertence a tag do link, e pode ser substituida por outra tag.</p>
+
+    <h2>Pseudo Elementos: ->(::)<- </h2>
+    <p>Os pseudo elementos podem agir nas classes, nos elementos, nos ids, eles mexem no conteúdo periférico do elemento: <strong>after</strong></p>
+
+    <ul>
+        <li><strong>a::after { content: ' [link] '; text-decoration: none; font-weight: normal; color: darkgrey;</strong> : aqui ele mostra a palavra 'link' no fim de cada link, com toda estilização definida em CSS.</li>
+        <li><strong>a::before { content: ' [link] '; </strong> : aqui ele mostra a palavra 'link' no princípio de cada link, com toda estilização definida em CSS.</li>
+    </ul>
+
+    <p class="recomendacao">Recomendação, estudar mais sobre os atributos das Pseudo Classes e dos Pseudo Elementos</p>
+    <p><pre><code>
+        
+        /* <strong>SELECTORES PESONALIZADOS</strong>
+
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-elemento
+            >   = children (filho)
+    
+        */</code></pre></p>
+
+
+    
+    
+</body>
+</html>

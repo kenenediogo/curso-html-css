@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <link rel="shortcut icon" href="modulo-2.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        .explicacao {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de hover</h1>    
+    
+    <pre>
+        <code class="explicacao">div > p {
+        display: none; -> escondeu o texto que está dentro desse parágrafo.
+
+        -> este código significa que o parágrafo está dentro da div: é o filho, <br> não vai afectar o parágrafo que está fora da div ao estilizar o código em CSS.
+        }</code>
+    </pre>
+    
+    <p>Passe o mouse sobre o texto abaixo. Criou-se uma div que faz esconder o texto e que quando passamos o mouse, ele mostra o texto com as referidas configurações</p>
+
+    <pre>
+        <code class="explicacao">div hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+
+        -> este código significa que o parágrafo está dentro da div:hover também é o filho do div. <br> O código acima, vai fazer com que o parágrafo que está oculto apareça <br> com as respectivas configurações feitas no CSS.
+        }</code>
+    </pre>
+
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
