@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap');
+
+/* Raíz da árvore do documento: tudo que se definir no root, 
+vai servir para o documento inteiro. Criação de variáveis das cores e as fontes a usar no projecto */
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #BDA8BF;
+    --cor2: #8C648A;
+    --cor3: #710273;
+    --cor4: #580259;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-Serif;
+    --font-destaque: 'Josefin Sans', sans-serif;
+    --font-titulos: 'Bricolage Grotesque', sans-serif;
+}
+
+/* selector global, todas as configurações vão obedecer essa característica, isto é todos os elementos do html */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--font-padrao);
+}
+
+/* ORGANIZAÇÃO DO MENU NAVEGADO DROP-DOWN */
+
+/*ul {
+    list-style: none;
+}*/
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: black;
+}
+
+nav a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-------------------------------------------------------*/
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    background-color: var(--cor3);
+    min-height: 150%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.466);
+    /*letter-spacing: .1em;*/
+}
+
+/* quando se criou o max width para 500px, ele se transformou num bloco
+e para centralizar temos que criar uma margem automática */
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 700px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.466);
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgb(0, 0, 0, 0.363);
+}
+
+
+/*nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}*/
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--font-titulos);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.3em;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 3em;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3)
+}
+
+main img {
+    width: 100%;
+}
+
+/* a imagem como não é um bloco, para centraliza-la, temos que criar um display: block */
+main img.fotopequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+main img.assinatura {
+    max-width: 200px;
+    display: block;
+    padding-left: 45px;
+}
+
+main ol {
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+    list-style-position: inside;
+    text-indent: 2em;
+    font-style: italic;
+}
+
+main ul {
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+    list-style-position: inside;
+    text-indent: 2em;
+    font-style: italic;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.voltar {
+    text-decoration: none;
+    text-align: right;
+    font-weight: border;
+    font-size: 1em;
+}
+
+.topo {
+    text-decoration: none;
+    text-align: right;
+    font-weight: border;
+    font-size: 1em;
+}
+
+p.especial::before {
+    content: '✻ '
+}
+
+p.voltar::before {
+    content: '↚  ';
+}
+
+p.topo::after {
+    content: '⤴ ';
+}
+
+main li:hover {
+    background-color: var(--cor4);
+    color: white;
+}
+
+p.fonte {
+    background-image: linear-gradient(to left, var(--cor2), transparent);
+    color: white;
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+    padding: 1px;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px grey;
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+aside p {
+    text-align: left;
+    font-style: italic;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    line-height: 1.8em;
+}
+
+aside li:hover {
+    background-color: var(--cor1);
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
