@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="modulo-2.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container {
+            /* todo posicionamento por padrão já é relativo,não era muito necessário definir. A regra é o que está de fora tem o posicionamento relativo */
+            
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            
+            position: relative;
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            /* O que está por dentro vai ter o posicionamento absoluto. Quando se coloca o posicionamento absoluto, pode-se definir duas propriedades: left e top */
+            
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%;
+
+            /* a propriedade transform mexe no deslocamento da caixa, quando usamos valores positivos ele mexe para baixo e para direita e com os valores negativos ele mexe para cima e para esquerda. */
+            transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section id="container">
+        <article id="conteudo">
+                
+        </article>
+        
+    </section>
+    
+</body>
+</html>
