@@ -68,6 +68,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -76,6 +80,13 @@ section.normal {
 section.imagem {
     background-color: rgb(50, 50, 50);
     color: white;
+
+    /* box-shadow: inset (significa, sombra para dentro: 6px: deslocamento direita 6px: deslocamento para baixo 13px: espalhamento 0px: ampliação */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+
+    /* vai fixar as imagens e dar o efeito PARALAX*/
+    background-attachment: fixed;
 }
 
 /* dentro do section de imagem, vamos criar uma caixa preta dentro do parágrafo para não atrabalhar a leitura caso a imagem seja branca, e colocamos um width para delimitar o seu tamanho */
@@ -85,7 +96,19 @@ section.imagem > p {
     display: inline-block;
 
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.512);
+    text-shadow: 1.2px 1.2px 0px black;
+}
+
+section#img01 {
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url("imagens/background002.jpg");
+
 }
 
 footer {
