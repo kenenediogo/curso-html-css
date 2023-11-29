@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* vai resetar todas as configurações - selector geral */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* o html e o body vão ter configurações comuns*/
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* text-transform: upercase (colocar todas letras em maiúsculas) ou font-variant: small-caps (torna as letras todas maísculas mas as primeiras ainda ficam maiores) */
+header > h1  {
+    padding-top: 50px;
+    font-variant-caps: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* esta configuração vai servir para as duas section, tanto a imagem, quanto a normal. Criar uma configuração com o padding-top e padding-bottom de 10vh (view port - tamanho da tela) pra dar o efeito paralax no site */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+/* dentro do section de imagem, vamos criar uma caixa preta dentro do parágrafo para não atrabalhar a leitura caso a imagem seja branca, e colocamos um width para delimitar o seu tamanho */
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.255);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
