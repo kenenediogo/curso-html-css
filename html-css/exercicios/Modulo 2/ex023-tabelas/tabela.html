@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="modulo-2.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* usando o border na tag table, ele só vai colocar a borda em volta da tabela e não vai preencher as linhas nem colunas | 
+        > Para preencher a volta dos dados, estilizamos o td com a propriedade border. Podemos criar a largura com a propriedade width e a altura com a height e um padding para criar o afastamente do texto a borda |
+        > Para separar as linhas ou juntar, usamos a propriedade <border-collapse: separete>, ele serpara as linhas e <border-callapse: collapse>, ele vai juntar as linhas |
+        > Para o HTML5, as tags de fechamento do tr e td, não são obrigatórias. A hieraquia da tabela tem que estar na ordem certa  */
+
+        table {
+            /*border: 4px solid red;*/
+            width: 200px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        tr.linha {
+            background-color: grey;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    <!--  -->
+
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!-- Criar uma Tag Table, para delimitar a tabela -->
+    <!-- 
+        HIERARQUIA DE TABELAS (Simples)
+        > TABLE = Tabelas ------------------------------ <table> 
+            > TABLE ROW = Linha de Tabela -------------- <tr>
+                > TABLE HEADER = Cabeçalho de Tabela --- <th>
+                    > TABLE DATA = Dado de Tabela ------ <td>
+     -->
+    <table>
+        <tr>  <!-- Primeira Linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        
+        <tr class="linha"> <!-- Segunda Linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr> <!-- Terceira Linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr class="linha"> <!-- Quarta Linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
