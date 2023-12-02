@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>População | Angola</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: grey;
+
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightblue;
+        }
+
+
+
+        /* SECÇÃO DAS CLASSES */
+
+        .num {
+            text-align: right;
+        }
+
+        .alifoot {
+            text-align: left;
+        }
+
+         /* FIM SECÇÃO DAS CLASSES */
+
+         thead, tfoot {
+            background-color: grey;
+            color: white;
+         }
+    </style>
+
+</head>
+<body>
+    <h1>População Geral de Angola</h1>
+    <table>
+        <!-- Caption não é um título, mas a legenda da tabela -->
+        <caption>Censo feito em 2014</caption>
+        <thead>
+            <!-- scope (escopo): col é para dizer se os dados estão na mesma coluna -->
+            <th scope="col">Província</th>
+            <th scolpe="col">Capital</th>
+            <th scolpe="col" style="width: 50px;">População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td>Caxito</td>
+                <td class="num">356.641</td>
+            </tr>
+
+            <tr>
+                <td>Benguela</td>
+                <td>Benguela</td>
+                <td class="num">2.231.385</td>
+            </tr>
+            
+
+            <tr>
+                <td>Bié</td>
+                <td>Cuíto</td>
+                <td class="num">1.455.255</td>
+            </tr>
+            
+            <tr>
+                <td>Cabinda</td>
+                <td>Cabinda</td>
+                <td class="num">716.076</td>
+            </tr>
+            
+            <tr>
+                <td>Cuando-Cubango</td>
+                <td>Menongue</td>
+                <td class="num">534.002</td>
+            </tr>
+            
+            <tr>
+                <td>Cuanza Norte</td>
+                <td>Nadalatando</td>
+                <td class="num">443.386</td>
+            </tr>
+            
+            <tr>
+                <td>Cuanza Sul</td>
+                <td>Sumbe</td>
+                <td class="num">1.881.873</td>
+            </tr>
+            
+            <tr>
+                <td>Cunene</td>
+                <td>Ondijiva</td>
+                <td class="num">990.087</td>
+            </tr>
+            
+            <tr>
+                <td>Huambo</td>
+                <td>Huambo</td>
+                <td class="num">2.019.555</td>
+            </tr>
+            
+            <tr>
+                <td>Huíla</td>
+                <td>Lubango</td>
+                <td class="num">2.497.422</td>
+            </tr>
+            
+            <tr>
+                <td>Luanda</td>
+                <td>Luanda</td>
+                <td class="num">6.945.386</td>
+            </tr>
+            
+            <tr>
+                <td>Lunda Norte</td>
+                <td>Dundo</td>
+                <td class="num">862.566</td>
+            </tr>
+            
+            <tr>
+                <td>Lunda Sul</td>
+                <td>Saurimo</td>
+                <td class="num">537.587</td>
+            </tr>
+            
+            <tr>
+                <td>Malanje</td>
+                <td>Malanje</td>
+                <td class="num">986.363</td>
+            </tr>
+            
+            <tr>
+                <td>Moxico</td>
+                <td>Luena</td>
+                <td class="num">758.568</td>
+            </tr>
+            
+            <tr>
+                <td>Namibe</td>
+                <td>Moçâmedes</td>
+                <td class="num">495.326</td>
+            </tr>
+            
+            <tr>
+                <td>Uíge</td>
+                <td>Uíge</td>
+                <td class="num">1.483.118</td>
+            </tr>
+            
+            <tr>
+                <td>Zaire</td>
+                <td>Mabanza Congo</td>
+                <td class="num">594.428</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row" class="alifoot">Total da População</th>
+            <td></td>
+            <td class="num"><strong>25.789.024</strong></td>
+        </tfoot>
+    </table>
+
+</body>
+</html>

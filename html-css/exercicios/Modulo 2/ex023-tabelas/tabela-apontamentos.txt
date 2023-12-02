@@ -1,27 +1,26 @@
 # TABELAS
 
 <!-- Criar uma Tag Table, para delimitar a tabela -->
-    <!-- 
-        HIERARQUIA DE TABELAS (Simples)
-        > TABLE = Tabelas ------------------------------ <table> 
-            > TABLE ROW = Linha de Tabela -------------- <tr>
-                > TABLE HEADER = Cabeçalho de Tabela --- <th>
-                    > TABLE DATA = Dado de Tabela ------ <td>
-     -->
 
+HIERARQUIA DE TABELAS (Simples)
+
+   > TABLE = Tabelas ------------------------------ <table> 
+       > TABLE ROW = Linha de Tabela -------------- <tr>
+           > TABLE HEADER = Cabeçalho de Tabela --- <th>
+               > TABLE DATA = Dado de Tabela ------ <td>
+
+usando o border na tag <table>, ele só vai colocar a borda em volta da tabela e não vai preencher as linhas nem colunas.
+> Para preencher a volta dos dados, estilizamos o <td> com a propriedade *border*. Podemos criar a largura com a propriedade *width* e a altura com a *height* e um *padding* para criar o afastamente do texto a borda |
+> Para separar as linhas ou juntar, usamos a propriedade *border-collapse: separete*, ele serpara as linhas e <border-callapse: collapse>, ele vai juntar as linhas.
+> Para o HTML5, as tags de fechamento do *tr e td*, não são obrigatórias. A hieraquia da tabela tem que estar na ordem certa.
 
 <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        /* usando o border na tag table, ele só vai colocar a borda em volta da tabela e não vai preencher as linhas nem colunas | 
-        > Para preencher a volta dos dados, estilizamos o td com a propriedade border. Podemos criar a largura com a propriedade width e a altura com a height e um padding para criar o afastamente do texto a borda |
-        > Para separar as linhas ou juntar, usamos a propriedade <border-collapse: separete>, ele serpara as linhas e <border-callapse: collapse>, ele vai juntar as linhas |
-        > Para o HTML5, as tags de fechamento do tr e td, não são obrigatórias. A hieraquia da tabela tem que estar na ordem certa  */
-        
+   
         table {
-            /* border: 4px solid red; */
+            border: 4px solid red;
             width: 400px;
             height: 150px;
             border-collapse: collapse;
@@ -52,3 +51,82 @@ body
             <td>C2</td>
         </tr>
 </table>
+
+
+ALINHAMENTO
+
+* Alinhamento Horizontal dos elementos na tabela, para isso usamos a propriedade <text-align: left, center, right>
+* Alinhamento vertical dos elementos na tabela, para isso usamos a propriedade <vertical-align: top, bottom, middle>
+
+ANATOMIA DE TABELAS GRANDES
+
+      > CAPTION = Legenda da Tabela
+        > TABLE = Tabelas ------------------ <table> 
+          > THEAD = Cabeça da tabela ----- <tr>, <td>, <th>
+          > TBODY = Corpo da Tabela ------ <tr>, <td>, <th>
+          > TFOOT = Rodapé da Tabela ----- <tr>, <td>, <th>
+
+<!-- scope (escopo): col é para dizer se os dados estão na mesma coluna -->
+
+	<th scolpe="col" style="width: 50px;">População</th>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
