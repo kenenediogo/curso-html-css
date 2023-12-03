@@ -66,26 +66,41 @@ ANATOMIA DE TABELAS GRANDES
           > TBODY = Corpo da Tabela ------ <tr>, <td>, <th>
           > TFOOT = Rodapé da Tabela ----- <tr>, <td>, <th>
 
-<!-- scope (escopo): col é para dizer se os dados estão na mesma coluna -->
+<!-- scope (escopo): col é para dizer se os dados estão na mesma coluna, e scope: row, é para dizer se os dados estão na mesma linha -->
 
 	<th scolpe="col" style="width: 50px;">População</th>
 
+A pseudo-classe :nth-child em CSS é usada para selecionar elementos com base em sua posição em relação aos irmãos diretos dentro de seu elemento pai. Essa pseudo-classe aceita uma fórmula matemática (an + b), onde n representa a posição do elemento. Por exemplo, você pode usar :nth-child(2) para selecionar todos os elementos que são o segundo filho direto de seu pai, :nth-child(odd) para selecionar os elementos ímpares, e assim por diante.
+
+	tbody > tr:nth-child(odd) { /* 2n+1 */
+            background-color: white;
+        }
+
+> Selecionar o segundo elemento: p:nth-child(2) {}
+> Selecionar elementos ímpares: li:nth-child(odd) {}
+> Selecionar elementos pares: div:nth-child(even) {}
+> Selecionar a cada terceiro elemento a partir do segundo: ul li:nth-child(3n + 2) {}
+
+Lembre-se de que a contagem de elementos começa do 1. Se você quiser selecionar o primeiro elemento, pode usar :nth-child(1) ou simplesmente :first-child. Essa pseudo-classe é útil quando você precisa estilizar elementos específicos com base em sua posição no documento HTML.
 
 
+CABEÇALHO FIXO EM TABELAS GRANDES
 
+/* para fazer o cabeçalho ficar fixo conforme vamos scrollando para baixo, primeiro tenho que manter a relatividade da tabela, usando a própriedade > position: relative. */
 
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
 
+De seguida configurar o thead para manter ele fixo. Então temos que usar três recursos para permitir a mesma rolagem fixa;
 
-
-
-
-
-
-
-
-
-
-
+	thead > tr > th {
+	    position: sticky;
+	    top: 0;
+	    background-color: #383838 /* o mesmo que o background color do thead*/
+	}
 
 
 
