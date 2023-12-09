@@ -91,14 +91,14 @@ Para poder controlar onde o site de destino vai abrir, podemos usar o atributo t
 ‣ _blank: vai abrir o link em uma nova janela em branco
 ‣ _self: vai abrir o link na janela ou frame atual (padrão) 
 
-* Ligações Externas: <a href="https://www.facebook.com/kenenediogo98" target="_blank" rel="External" >minha conta do facebook</a>
-* Ligações Internas: <a href="noticias/pag003.html" rel="next" target="_self">Terceira página (notícias)</a>
+* Ligações Externas: < a href="https://www.facebook.com/kenenediogo98" target="_blank" rel="External" >minha conta do facebook< /a >
+* Ligações Internas: < a href="noticias/pag003.html" rel="next" target="_self" >Terceira página (notícias)< /a >
 
 para efetuar download de algum material em PDF, ou de um arquivo ZIP qualquer. Aqui vão alguns media types bem usados no nosso dia-a-dia:
 ‣ application/zip       ‣ text/html     ‣ text/css      ‣ text/javascript       ‣ video/mp4         ‣ video/H264            ‣ video/JPEG
 ‣ audio/aac             ‣ audio/mpeg    ‣ font/ttf      ‣ image/jpeg            ‣ image/png
 
-* Links para Download: <a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" target="_blank" type="application/pdf">Baixar o livro em PDF</a>
+* Links para Download: < a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" target="_blank" type="application/pdf" >Baixar o livro em PDF< /a >
 
 Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários valores, entre eles vou citar:
 
@@ -111,7 +111,7 @@ Existe um recurso bem interessante para links que é indicar qual é a natureza 
 
 Aula 011: FOTOS
 
- <picture >
+ < picture >
    < source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png" >
    < source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png" >
    < img src="imagens/foto-g.png" alt="Imagem flexivel" >
@@ -132,7 +132,7 @@ Aula 011: AUDIOS
    < source src="midia/guanacast-33.ogg" type="audio/ogg" >
    < source src="midia/guanacast-33.wav" type="audio/wav" >
    < p >Infelizmente seu navegador não consegue reproduzir áudio. < a href="midia/guanacast-33.mp3" >baixar o arquivo MP3< /a >< /p >
-</audio>
+< /audio >
 
 Vamos analisar os principais atributos da tag <audio> antes de mais nada:
 
