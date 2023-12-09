@@ -10,19 +10,19 @@ EX 003: inserir imagens no site a partir de 3 fontes. A partir da mesma pasta, a
 < img src="imagens/logo-css.png" alt="Logo CSS" >
 
 <!-- Inserir uma pasta a partir de um site com um URL -->
-< img src="https://tkssharma.com/static/1bbde74a918ac99b9e7319e041cb62b5/714e6/js.png" alt="Logo JavaScript">
+< img src="https://tkssharma.com/static/1bbde74a918ac99b9e7319e041cb62b5/714e6/js.png" alt="Logo JavaScript" >
 
 # AULA 004: Ícones
 EX 004: Existem várias formas para criar FAVICON de um site. A que eu mais gostei foi usando o site favicon.ico, onde podemos criar icones de três formas: A partir de um texto, a partir de uma imagem e a partir de emojis.
 
-Para inserir o mesmo, basta inserir um link:favicon na tag <head> por cima do <title> a tag <link rel="shortcut icon" href="html.ico" type = "image/x-icon">
+Para inserir o mesmo, basta inserir um link:favicon na tag <head> por cima do <title> a tag < link rel="shortcut icon" href="html.ico" type = "image/x-icon" >
 
 # AULA 006: Hierarquia de Títulos
 EX 006: Para criar a hierarquia dos títulos é necessário inserir as tags <h1> até a <h6>
 
 # AULA 008: Formatação - Negrito e Itálico
 
-Quando quisermos negritar, não usamos <b>xxx</b> passamos a usar os <Strong>xxx</strong> e no itálico, já não usamos <i>xxx</i>, mas sim <em>xxx</em>. 
+Quando quisermos negritar, não usamos < b >xxx< /b > passamos a usar os < Strong >xxx< /strong > e no itálico, já não usamos < i >xxx< /i >, mas sim < em >xxx< /em >. 
 
 Usamos a tecla de Atalho Ctrl + Shift + P, para abrir o Wrap with abbreviation, para podermos colocar as tags de forma mais rápida, sem ter que estar constantemente abrir e fechar.
 
@@ -66,7 +66,7 @@ LISTAS ORDENADAS: Para usar as Ordered List, usa-se a tag < ol > para delimitar 
 
 Também podemos indicar o início da contagem usando o parâmetro start. Por exemplo, a tag < ol type=“I” start = “5” > vai gerar itens numerados como V, VI, VII, VIII, IX, … 
 
-LISTAS NÃO ORDENADAS: Para criar uma unordered list, vamos usar a tag <ul> para delimitar a lista e a tag <li> para criar cada um dos seus itens internos. O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag <ul> com os seguintes valores:
+LISTAS NÃO ORDENADAS: Para criar uma unordered list, vamos usar a tag < ul > para delimitar a lista e a tag < li > para criar cada um dos seus itens internos. O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag < ul > com os seguintes valores:
 
 ‣ disc - padrão. Uma bola preta totalmente pintada
 ‣ circle - Uma bola com uma borda preta e sem preenchimento
@@ -78,9 +78,9 @@ dl - Definiction List (Lista de Definição):
 dt - Definiction Term (Termo de Definição):
 dd - Definiction Description (Descrição da Definição):
 
-<dl>
-    <dt >HTML</dt>
-    <dd>Linguagem de marcação utilizada para criar o conteúdo do site.</dd>
+< dl >
+    < dt >HTML< /dt >
+    < dd >Linguagem de marcação utilizada para criar o conteúdo do site.< /dd >
 </dl>
 
 # AULA 010: LIGAÇÕES EM TODA PARTE
@@ -111,15 +111,15 @@ Existe um recurso bem interessante para links que é indicar qual é a natureza 
 
 Aula 011: FOTOS
 
-<picture>
-   <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
-   <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
-   <img src="imagens/foto-g.png" alt="Imagem flexivel">
-</picture>
+ <picture >
+   < source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png" >
+   < source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png" >
+   < img src="imagens/foto-g.png" alt="Imagem flexivel" >
+< /picture >
 
 É importante que existe uma ordem entre os <source>, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a imagem padrão.
 
-Note que a tag <source> possui três atributos:
+Note que a tag < source > possui três atributos:
 
 ‣ type: vai indicar o media type da imagem que usamos (veja mais informações sobre media types no capítulo 10).
 ‣ srcset: vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.
@@ -127,11 +127,11 @@ Note que a tag <source> possui três atributos:
 
 Aula 011: AUDIOS
 
-<audio preload="metadata" autoplay controls>
-   <source src="midia/guanacast-33.mp3" type="audio/mpeg">
-   <source src="midia/guanacast-33.ogg" type="audio/ogg">
-   <source src="midia/guanacast-33.wav" type="audio/wav">
-   <p>Infelizmente seu navegador não consegue reproduzir áudio. </p a href="midia/guanacast-33.mp3" >baixar o arquivo MP3</a></p>
+< audio preload="metadata" autoplay controls >
+   < source src="midia/guanacast-33.mp3" type="audio/mpeg" >
+   < source src="midia/guanacast-33.ogg" type="audio/ogg" >
+   < source src="midia/guanacast-33.wav" type="audio/wav" >
+   < p >Infelizmente seu navegador não consegue reproduzir áudio. < a href="midia/guanacast-33.mp3" >baixar o arquivo MP3< /a >< /p >
 </audio>
 
 Vamos analisar os principais atributos da tag <audio> antes de mais nada:
@@ -151,12 +151,12 @@ Dentro da tag < audio >, adicionamos vários < source > com formatos diferentes 
 
 VÍDEOS
 
-<video width="500" poster="imagens/limoes-capa.png" controls>
-    <source src="midia/meu-video.mp4" type="video/mp4">
-    <source src="midia/meu-video.m4v" type="video/mp4">
-    <source src="midia/meu-video.webm" type="video/ogg">
-    <p>Seu navegador não tem compatibilidade com a reprodução de vídeos</p>
-</video>
+< video width="500" poster="imagens/limoes-capa.png" controls >
+    < source src="midia/meu-video.mp4" type="video/mp4" >
+    < source src="midia/meu-video.m4v" type="video/mp4" >
+    < source src="midia/meu-video.webm" type="video/ogg" >
+    < p >Seu navegador não tem compatibilidade com a reprodução de vídeos< /p >
+< /video >
 
 Atributos importantes ta tag video:
 
@@ -170,46 +170,46 @@ Atributos importantes ta tag video:
 
 O Estilo inline, significa fazer a estilização nas tags HTML com CSS na própria linha.
 
-<body style="background-color: lightskyblue; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+< body style="background-color: lightskyblue; font-family: Arial, Helvetica, sans-serif; font-size: 20px;" >
 
-    <h1 style="color:mediumblue; background-color: dodgerblue; font-size: 1.5em;">Capítulo 1</h1>
-    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.1</h2>
+    < h1 style="color:mediumblue; background-color: dodgerblue; font-size: 1.5em;">Capítulo 1</h1 >
+    < h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.1< /h2 >
     
-    <h1 style="color:mediumblue; background-color: dodgerblue; font-size: 1.5em;">Ca
-    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.1</h2>
+    < h1 style="color:mediumblue; background-color: dodgerblue; font-size: 1.5em;" >Ca
+    < h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.1< /h2 >
     
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci delectus debitis eligendi cumque quis consequuntur! Quas, velit dignissimos provident minima cumque, sed cum ab inventore ipsum natus ipsa error reiciendis.</p>
+    < p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci delectus debitis eligendi cumque quis consequuntur! Quas, velit dignissimos provident minima cumque, sed cum ab inventore ipsum natus ipsa error reiciendis.</p>
 
 # AULA 014: ESTILOS LOCAIS / INTERNOS
 
 A esitização do texto é feita dentro da Tag <Head>, com a tag:
 
- <Style>
+ < Style >
     body{
        background-color: blue;
       }
-</style>
+< /style >
 
 # AULA 015: Estilos Externos ESTILOS EXTERNOS
 
 @charset "UTF-8";
 
-body{
+body {
     background-color: lightsteelblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px; }
 
-h1{
+h1 {
     color: darkblue;
     background-color: lightblue; }
 
-h2{
+h2 {
     color:darkred }
 
-p{
+p {
     text-align: justify; }
 
-a{
+a {
     text-decoration: none; }
 
 # AULA 016
@@ -219,19 +219,19 @@ REPRESENTAÇÃO DE CORES:
 Podemos fazer a representação de cores de tres maneiras:
 
 <!-- Representação por códigos Hexadecimais; Decimal: 0 1 2 3 4 5 6 7 8 9; Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C SD E F -->
-<h2 style="background-color: #0000ff; color: #ffffff";">Exemplo de Cores 2</h2>
+< h2 style="background-color: #0000ff; color: #ffffff";">Exemplo de Cores 2< /h2 >
 
 <!-- Representação por Código RGB (Red,Green, Blue) -->
-<h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de Cores 3</h2>
+< h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);" >Exemplo de Cores 3< /h2 >
 
 <!-- Representação por Características de Cores: (Hue(matis), Saturation(saturação), Luminosity(luminosidade)) -->
-<h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores 4</h2>
+< h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores 4< /h2 >
 
 GRADIENTES (DEGRADE):
 
 Para usar um gradiente, temos que usar a propriedade: "background-image", com a propriedade: "liner-gradient", e os seus atributos: "to right, white, blue", podemos usar também "to left", "to right", "to top", "to bottom", ou ainda usar em graus: 90deg, 45deg, -45deg, -90deg etc. Podemos ainda adicionar a percentagem de ocupação da cor a frente do código da cor.
 
-<style>
+< style >
         
 	* { /* Configurações globais em CSS */
         	height: 100%;
@@ -244,7 +244,7 @@ Para usar um gradiente, temos que usar a propriedade: "background-image", com a 
             	background-attachment: fixed; /* fundo fixo */
         }
 
-</style>
+< /style >
 
 
 
