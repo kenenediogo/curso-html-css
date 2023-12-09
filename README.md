@@ -56,7 +56,7 @@ BLOCKQUOTE: é para criar sitações extraidas de um livro, por exemplo algo que
 
 # AULA 009: LISTAS ORDENADAS E LISTAS NÃO ORDENADAS
 
-LISTAS ORDENADAS: Para usar as Ordered List, usa-se a tag <ol> para delimitar a lista e <li> (list item) para identificar cada item da lista. A tag <ol> possui um parâmetro type, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:
+LISTAS ORDENADAS: Para usar as Ordered List, usa-se a tag < ol > para delimitar a lista e < li > (list item) para identificar cada item da lista. A tag < ol > possui um parâmetro type, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:
 
 ‣ 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …
 ‣ A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …
